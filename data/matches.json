@@ -1,0 +1,8 @@
+{
+    "0": "Nothing",
+    "1": "HighCard",
+    "2": "Pair",
+    "3": "ThreeOfAKind",
+    "4": "FourOfAKind",
+    "5": "FiveOfAKind"
+}

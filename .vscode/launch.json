@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Unit Tests",
+            "program": "${workspaceFolder}\\node_modules\\mocha\\bin\\_mocha",
+            "args": [
+                "-u",
+                "tdd",
+                "--timeout",
+                "999999",
+                "--colors",
+                "${workspaceFolder}\\tests\\unitTests\\*\\*.tests.js"
+            ],
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Integration Tests",
+            "program": "${workspaceFolder}\\node_modules\\mocha\\bin\\_mocha",
+            "cwd": "${workspaceRoot}",
+            "args": [
+                "--colors",
+                "${workspaceFolder}\\tests\\integrationTests\\*\\*.tests.js", "--no-timeouts"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceFolder}\\src\\bin\\www"
+        }
+
+    ]
+}

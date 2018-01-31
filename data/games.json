@@ -1,0 +1,130 @@
+{
+    "0": {
+        "name": "5draw",
+        "label": "5 Card Draw",
+        "numCards": 5,
+        "communityCards" : 0,
+        "playerCards" : 5,
+        "dealOrder": {
+            "1":{"startPosition":0,"cardsToDeal":5,"dealTo":"players","cardDirection": "down"},
+            "2":{"startPosition":0,"cardsToDeal":3,"dealTo":"replace","cardDirection": "down"}
+        },
+        "replacement": 3,
+        "opp_move": "none",
+        "wild": "none",
+        "bettingStartsAt" : "left-of-dealer",
+        "description": "Each player gets 5 cards in their hand and can discard up to three of those."
+    },
+    "1": {
+        "name": "5card",
+        "label": "5 Card straight Up",
+        "numCards": 5,
+        "communityCards" : 0,
+        "playerCards" : 5,
+        "dealOrder": {
+            "1":{"startPosition":0,"cardsToDeal":3,"dealTo":"players","cardDirection": "down"},
+            "2":{"startPosition":3,"cardsToDeal":1,"dealTo":"players","cardDirection": "down"},
+            "3":{"startPosition":4,"cardsToDeal":1,"dealTo":"players","cardDirection": "down"}
+        },
+        "replacement": 0,
+        "opp_move": "none",
+        "wild": "none",
+        "bettingStartsAt" : "left-of-dealer",
+        "description": "Each player gets 5 cards and you bet, check or pass on those 5 cards."
+    },
+    "2": {
+        "name": "5stud",
+        "label": "5 Card Stud",
+        "numCards": 5,
+        "communityCards" : 0,
+        "playerCards" : 5,
+        "dealOrder": {
+            "1":{"startPosition":0,"cardsToDeal":1,"dealTo":"players","cardDirection": "down"},
+            "2":{"startPosition":1,"cardsToDeal":1,"dealTo":"players","cardDirection": "up"},
+            "3":{"startPosition":2,"cardsToDeal":1,"dealTo":"players","cardDirection": "up"},
+            "4":{"startPosition":3,"cardsToDeal":1,"dealTo":"players","cardDirection": "up"},
+            "6":{"startPosition":4,"cardsToDeal":1,"dealTo":"players","cardDirection": "down"}
+        },
+        "replacement": 0,
+        "opp_move": "none",
+        "wild": "none",
+        "bettingStartsAt" : "best-hand-so-far",
+        "description": "Each player gets 2 cards down and 3 up"
+    },
+    "3": {
+        "name": "7stud",
+        "label": "7 Card Stud",
+        "numCards": 7,
+        "communityCards" : 0,
+        "playerCards" : 7,
+        "dealOrder": {
+            "1":{"startPosition":0,"cardsToDeal":2,"dealTo":"players","cardDirection": "down"},
+            "2":{"startPosition":2,"cardsToDeal":1,"dealTo":"players","cardDirection": "up"},
+            "3":{"startPosition":3,"cardsToDeal":1,"dealTo":"players","cardDirection": "up"},
+            "4":{"startPosition":4,"cardsToDeal":1,"dealTo":"players","cardDirection": "up"},
+            "5":{"startPosition":5,"cardsToDeal":1,"dealTo":"players","cardDirection": "up"},
+            "6":{"startPosition":6,"cardsToDeal":1,"dealTo":"players","cardDirection": "down"}
+        },
+        "replacement": 0,
+        "opp_move": "none",
+        "wild": "none",
+        "bettingStartsAt" : "best-hand-so-far",
+        "description": "Each player gets 3 cards down and 4 up. Winner is based on best five cards in a hand."
+    },
+    "4": {
+        "name": "baseball",
+        "label": "Baseball",
+        "numCards": 7,
+        "communityCards" : 0,
+        "playerCards" : 7,
+        "dealOrder": {
+            "1":{"startPosition":0,"cardsToDeal":2,"dealTo":"players","cardDirection": "down"},
+            "2":{"startPosition":2,"cardsToDeal":1,"dealTo":"players","cardDirection": "up"},
+            "3":{"startPosition":3,"cardsToDeal":1,"dealTo":"players","cardDirection": "up"},
+            "4":{"startPosition":4,"cardsToDeal":1,"dealTo":"players","cardDirection": "up"},
+            "5":{"startPosition":5,"cardsToDeal":1,"dealTo":"players","cardDirection": "up"},
+            "6":{"startPosition":6,"cardsToDeal":1,"dealTo":"players","cardDirection": "down"}
+        },
+        "replacement": 0,
+        "opp_move": "none",
+        "wild": ["012","006"],
+        "bettingStartsAt" : "best-hand-so-far",
+        "description": "Each player gets 5 cards and can discard up to three of those."
+    },
+    "5": {
+        "name": "tex",
+        "label": "Texas Hold 'em",
+        "numCards": 7,
+        "communityCards" : 5,
+        "playerCards" : 2,
+        "dealOrder": {
+            "1":{"startPosition":0,"cardsToDeal":2,"dealTo":"players","cardDirection": "down"},
+            "2":{"startPosition":0,"cardsToDeal":3,"dealTo":"community","cardDirection": "up"},
+            "3":{"startPosition":3,"cardsToDeal":1,"dealTo":"community","cardDirection": "up"},
+            "4":{"startPosition":4,"cardsToDeal":1,"dealTo":"community","cardDirection": "up"}
+        },
+        "replacement": 0,
+        "opp_move": "none",
+        "wild": "none",
+        "bettingStartsAt" : "left-of-dealer",
+        "description": "Each player gets 2 cards in hand and share 5 community cards."
+    },
+    "6": {
+        "name": "ohmaha",
+        "label": "Omaha Hold 'em",
+        "communityCards" : 5,
+        "playerCards" : 4,
+        "numCards": 9,
+        "dealOrder": {
+            "1":{"startPosition":0,"cardsToDeal":4,"dealTo":"players","cardDirection": "down"},
+            "2":{"startPosition":0,"cardsToDeal":3,"dealTo":"community","cardDirection": "up"},
+            "3":{"startPosition":3,"cardsToDeal":1,"dealTo":"community","cardDirection": "up"},
+            "4":{"startPosition":4,"cardsToDeal":1,"dealTo":"community","cardDirection": "up"}
+        },
+        "replacement": 0,
+        "opp_move": "none",
+        "wild": "none",
+        "bettingStartsAt" : "left-of-dealer",
+        "description": "Each player gets 4 cards in hand and share 5 community cards."
+    }
+}

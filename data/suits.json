@@ -1,0 +1,26 @@
+{
+   "1": {
+       "name":"Hearts",
+       "key":"1",
+       "color":"red",
+       "symbol":"&hearts;"
+    },
+   "2": {
+       "name":"Spades",
+       "key":"2" ,
+       "color":"black",
+       "symbol":"&spades;"
+    },
+   "3": {
+       "name":"Diamonds",
+       "key":"3",
+       "color" :"red",
+       "symbol":"&diams;"
+    },
+   "4": {
+       "name":"Clubs",
+       "key":"4",
+       "color" :"black",
+       "symbol":"&clubs;"
+    }
+}

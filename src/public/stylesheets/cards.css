@@ -1,0 +1,127 @@
+body{
+    font-family: 'Wellfleet', cursive; padding: 20px
+}
+span {
+    font-family: 'Indie+Flower', cursive;
+}
+
+.order{
+    visibility:hidden
+}
+
+#gameboard{
+    display: table-row
+}
+
+#player-board{
+    display: table-cell;
+}
+
+#comm-board{
+    vertical-align:middle;
+    display: table-cell;
+}
+
+.selected .card.front{
+	background: #aaa;
+	opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+.card-container {
+	display: inline-block;
+	margin: 0 auto;
+	padding: 0 12px;
+	perspective: 900px;
+	width: 82px;
+	height: 100px;
+	text-align: center;
+}
+.card {
+	position: relative;
+	width: 82px;
+	height: 100px;
+	transition: all 0.6s ease;
+	transform-style: preserve-3d;
+}
+
+.front, .back {
+	position: absolute;
+	top: 0;
+	left: 0;
+		margin:auto;
+	width: 70px;
+	height: 95px;
+	border-radius: 3px;
+	color: white;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+	backface-visibility: hidden;
+}
+.front {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 28px;
+}
+.back {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 28px;
+}
+/* .card-container:hover .card {
+	transform: rotateX(180deg);
+}
+.back {
+	transform: rotateX(180deg);
+} */
+
+.royal {
+    color :white;
+    background-color:silver
+}
+.flush {
+    border:1px solid gray;
+}
+.straight{
+    text-shadow:0 0 3px #FF0000, 0 0 5px #0000FF}
+.pair {
+    border-radius: 5px;
+    background-color :coral
+}
+.three{
+    border-radius: 5px;
+    background-color:silver
+}
+.four{
+    border-radius: 5px;
+    background-color: gold
+}
+input[type="button"], select  {
+    border-radius: 5px;
+    padding: 8px;
+    min-width: 140px
+}
+.playerName {
+    float: left;
+}
+.score {
+    float: right;
+    text-align: right;
+}
+.player{
+    clear:both;
+    width: 100%;
+    min-width: 200px;
+    min-height: 20px;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #aaaaaa;
+}
+.communityName{
+    width: 100%;
+}
+#comm-board{
+    border-left: 2px solid #aaaaaa;
+    margin: 10px;
+    padding: 20px;
+}

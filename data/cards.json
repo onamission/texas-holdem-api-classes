@@ -1,0 +1,54 @@
+{
+    "1": {
+        "order":"1",
+        "value": "A",
+        "name": "Ace"},
+    "2": {
+        "order":"d",
+        "value" : "2",
+        "name": "Two"},
+    "3": {
+        "order":"c",
+        "value" : "3",
+        "name": "Three"},
+    "4": {
+        "order":"b",
+        "value" : "4",
+        "name": "Four"},
+    "5": {
+        "order":"a",
+        "value" : "5",
+        "name": "Five"},
+    "6": {
+        "order":"9",
+        "value" : "6",
+        "name": "Six"},
+    "7": {
+        "order":"8",
+        "value" : "7",
+        "name": "Seven"},
+    "8": {
+        "order":"7",
+        "value" : "8",
+        "name": "Eight"},
+    "9": {
+        "order":"6",
+        "value" : "9",
+        "name": "Nine"},
+    "10": {
+        "order":"5",
+        "value" : "10",
+        "name": "Ten"},
+    "11": {
+        "order":"4",
+        "value" : "J",
+        "name": "Jack"},
+    "12": {
+        "order":"3",
+        "value" : "Q",
+        "name": "Queen"},
+    "13": {
+        "order":"2",
+        "value" : "K",
+        "name": "King"}
+}
