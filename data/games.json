@@ -5,7 +5,7 @@
         "numCards": 5,
         "communityCards" : 0,
         "playerCards" : 5,
-        "dealOrder": {
+        "rounds": {
             "1":{"startPosition":0,"cardsToDeal":5,"dealTo":"players","cardDirection": "down"},
             "2":{"startPosition":0,"cardsToDeal":3,"dealTo":"replace","cardDirection": "down"}
         },
@@ -21,7 +21,7 @@
         "numCards": 5,
         "communityCards" : 0,
         "playerCards" : 5,
-        "dealOrder": {
+        "rounds": {
             "1":{"startPosition":0,"cardsToDeal":3,"dealTo":"players","cardDirection": "down"},
             "2":{"startPosition":3,"cardsToDeal":1,"dealTo":"players","cardDirection": "down"},
             "3":{"startPosition":4,"cardsToDeal":1,"dealTo":"players","cardDirection": "down"}
@@ -38,7 +38,7 @@
         "numCards": 5,
         "communityCards" : 0,
         "playerCards" : 5,
-        "dealOrder": {
+        "rounds": {
             "1":{"startPosition":0,"cardsToDeal":1,"dealTo":"players","cardDirection": "down"},
             "2":{"startPosition":1,"cardsToDeal":1,"dealTo":"players","cardDirection": "up"},
             "3":{"startPosition":2,"cardsToDeal":1,"dealTo":"players","cardDirection": "up"},
@@ -57,7 +57,7 @@
         "numCards": 7,
         "communityCards" : 0,
         "playerCards" : 7,
-        "dealOrder": {
+        "rounds": {
             "1":{"startPosition":0,"cardsToDeal":2,"dealTo":"players","cardDirection": "down"},
             "2":{"startPosition":2,"cardsToDeal":1,"dealTo":"players","cardDirection": "up"},
             "3":{"startPosition":3,"cardsToDeal":1,"dealTo":"players","cardDirection": "up"},
@@ -77,7 +77,7 @@
         "numCards": 7,
         "communityCards" : 0,
         "playerCards" : 7,
-        "dealOrder": {
+        "rounds": {
             "1":{"startPosition":0,"cardsToDeal":2,"dealTo":"players","cardDirection": "down"},
             "2":{"startPosition":2,"cardsToDeal":1,"dealTo":"players","cardDirection": "up"},
             "3":{"startPosition":3,"cardsToDeal":1,"dealTo":"players","cardDirection": "up"},
@@ -97,7 +97,7 @@
         "numCards": 7,
         "communityCards" : 5,
         "playerCards" : 2,
-        "dealOrder": {
+        "rounds": {
             "1":{"startPosition":0,"cardsToDeal":2,"dealTo":"players","cardDirection": "down"},
             "2":{"startPosition":0,"cardsToDeal":3,"dealTo":"community","cardDirection": "up"},
             "3":{"startPosition":3,"cardsToDeal":1,"dealTo":"community","cardDirection": "up"},
@@ -115,7 +115,7 @@
         "communityCards" : 5,
         "playerCards" : 4,
         "numCards": 9,
-        "dealOrder": {
+        "rounds": {
             "1":{"startPosition":0,"cardsToDeal":4,"dealTo":"players","cardDirection": "down"},
             "2":{"startPosition":0,"cardsToDeal":3,"dealTo":"community","cardDirection": "up"},
             "3":{"startPosition":3,"cardsToDeal":1,"dealTo":"community","cardDirection": "up"},

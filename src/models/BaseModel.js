@@ -63,16 +63,17 @@ class BaseModel{
         })
         return retVal;
     }
-/**
- * sorts an object by keyField with an ability to reverse the order if needed
- *
- * @param {string} keyField tells which field to sort by
- * @param {string} direction Optional: 'asc' (default) or 'desc'
- * @param {string} type Optional: 'string' (default) or 'number'
- * @returns
- * @memberof BaseModel
- */
-sortBy( keyField, direction, type ){
+
+    /**
+     * sorts an object by keyField with an ability to reverse the order if needed
+     *
+     * @param {string} keyField tells which field to sort by
+     * @param {string} direction Optional: 'asc' (default) or 'desc'
+     * @param {string} type Optional: 'string' (default) or 'number'
+     * @returns
+     * @memberof BaseModel
+     */
+    sortBy( keyField, direction, type ){
         if( !keyField ){
             return new Error( 'No Key Field Provided' );
         }
