@@ -6,9 +6,9 @@ exports.setup_game_board = function(req, res) {
     var gameName = req.params.gameName;
     var playerCount = req.params.playerCount;
     var game = gamesInstance.getBy( "name", gameName );
-    var gameboard = gameBoardService.playerArea( playerCount, game.numCards );
+    var gameboard = gameBoardService.playersCardArea( playerCount, game.numCards );
     if( game.communityCards ){
-        gameboard += gameBoardService.communityCards( game.communityCards );
+        gameboard += gameBoardService.communityCardArea( game.communityCards );
     }
     res.send( gameboard );
 };
