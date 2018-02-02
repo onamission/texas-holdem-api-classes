@@ -7,7 +7,7 @@ var shuffledDeck = require( '../../testData/shuffledDeck');
 
 describe("Game Setup Route Tests", function(){
     describe("setup new game", function(){
-        it.only("should return a configuration object for a texas holdem game with 5 players", function( done ){
+        it("should return a configuration object for a texas holdem game with 5 players", function( done ){
             agent.get( config.appUrl + '/game_play/tex/', function( err, res ){
                 if( err ){
                     console.log( err );
@@ -25,7 +25,7 @@ describe("Game Setup Route Tests", function(){
                 done();
             })
         });
-        it.only("should return a configuration object for a texas holdem game with 3 players", function( done ){
+        it("should return a configuration object for a texas holdem game with 3 players", function( done ){
             agent.get( config.appUrl + '/game_play/tex/3', function( err, res ){
                 if( err ){
                     console.log( err );
@@ -43,7 +43,7 @@ describe("Game Setup Route Tests", function(){
                 done();
             })
         });
-        it.only("should return a configuration object for a texas holdem game with 3 players and 2 decks", function( done ){
+        it("should return a configuration object for a texas holdem game with 3 players and 2 decks", function( done ){
             agent.get( config.appUrl + '/game_play/tex/3/2', function( err, res ){
                 if( err ){
                     console.log( err );
@@ -61,7 +61,7 @@ describe("Game Setup Route Tests", function(){
                 done();
             })
         });
-        it.only("should return a configuration object for a 5 card draw game with 5 players", function( done ){
+        it("should return a configuration object for a 5 card draw game with 5 players", function( done ){
             agent.get( config.appUrl + '/game_play/5draw/', function( err, res ){
                 if( err ){
                     console.log( err );
@@ -81,7 +81,7 @@ describe("Game Setup Route Tests", function(){
         });
     });
     describe("continue a started game game", function(){
-        it.only("should return a configuration object for a texas holdem game with 5 players", function( done ){
+        it("should return a configuration object for a texas holdem game with 5 players", function( done ){
             var cards = shuffledDeck.splice( 10, 20 );
             var gameCnfg = { "label": "test game", "numCards": 12, "communityCards": 12, "rounds":{ "1": 1, "2": 2, "3":3, "4":4, "5":5, "6":6} };
             var url = config.appUrl + '/game_play/tex/2/1/';

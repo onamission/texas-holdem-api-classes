@@ -15,7 +15,7 @@ class DealToPlayers extends DealService{
         var roundConfig = gamePlay.gameConfig.rounds[ roundToPlay ];
 
         // ensure that we have enough cards for this round
-        if( gamePlay.cardsInDeck.length < roundConfig.cardsToDeal + 1 ){
+        if( gamePlay.cardsInDeck.length < ( roundConfig.cardsToDeal * gamePlay.numberOfPlayers ) + 1 ){
             return new Error( "Not enough cards in the deck" );
         }
 

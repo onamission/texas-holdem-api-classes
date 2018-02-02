@@ -9,6 +9,7 @@ var index = require('./src/routes/index');
 var users = require('./src/routes/users');
 var gameSetup = require('./src/routes/game_setup');
 var gamePlay = require('./src/routes/game_play');
+var dealCards = require('./src/routes/deal_cards');
 
 var app = express();
 
@@ -28,6 +29,7 @@ app.use('/', index);
 app.use('/users', users);
 app.use('/game_setup', gameSetup);
 app.use('/game_play', gamePlay);
+app.use('/deal_cards', dealCards);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
