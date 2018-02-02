@@ -3,17 +3,18 @@ var gamesModel = new ( require( "./Games") )();
 
 class GamePlay{
 
-    constructor( numPlayers, deckCount ){
-        this.cardsInDeck = [];
-        this.numberOfPlayers = numPlayers || 5;
-        this.deckCount = deckCount || 1;
-        this.gameConfig = {};
-    }
-
-    getGameConfig( gameName, numberOfPlayers ){
-        this.cardsInDeck = new( DeckModel )( this.deckCount ).getNewDecks().shuffleDecks();
-        this.numberOfPlayers = numberOfPlayers || this.numberOfPlayers;
-        this.gameConfig = gamesModel.find( game => game.name === gameName );
+    setUpGame( numberOfPlayers, gameName, deckCount, cardsInDeck, gameConfig ){
+        if( !cardsInDeck.length ||  cardsInDeck.length === 0 ){
+            cardsInDeck = new DeckModel( deckCount )
+                .getNewDecks()
+                .shuffleDeck()
+                .cardsInDeck;
+        }
+        this.cardsInDeck = cardsInDeck;
+        this.numberOfPlayers = numberOfPlayers || 5;
+        this.gameConfig = Object.keys( gameConfig ).length > 0 ?
+            gameConfig:
+            gamesModel.getBy( "name", gameName ) || {};
         return this;
     }
 }

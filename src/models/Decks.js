@@ -8,7 +8,7 @@ class Decks{
      * @memberof Decks
      */
     constructor( numberOfDecks){
-        this.stackOfCards = [];
+        this.cardsInDeck = [];
         this.numberOfDecks = numberOfDecks || 1;
     }
 
@@ -36,7 +36,7 @@ class Decks{
                 })
             })
         }
-        this.stackOfCards = deck;
+        this.cardsInDeck = deck;
         return this;
     }
 
@@ -47,18 +47,20 @@ class Decks{
      * @returns {array} of cards with face value and suit in random order
      * @memberof Decks
      */
-    shuffleDecks(  ){
+    shuffleDeck(  ){
         var shuffledCards = [];
+
         // if we have no cards to shuffle, then return an empty array
-        if( !this.stackOfCards || !this.stackOfCards.length ){
+        if( !this.cardsInDeck || !this.cardsInDeck.length ){
             return shuffledCards;
         }
-        while( this.stackOfCards.length ){
-            var randomCard = Math.floor( Math.random() * this.stackOfCards.length );
-            var c = this.stackOfCards.splice( randomCard, 1 )[ 0 ];
+        while( this.cardsInDeck.length ){
+            var randomCard = Math.floor( Math.random() * this.cardsInDeck.length );
+            var c = this.cardsInDeck.splice( randomCard, 1 )[ 0 ];
             shuffledCards.push( c );
         }
-        this.stackOfCards = shuffledCards;
+
+        this.cardsInDeck = shuffledCards;
         return this;
     }
 }
