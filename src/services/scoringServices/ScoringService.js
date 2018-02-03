@@ -5,14 +5,14 @@ class ScoringService{
         var sets = [];
         var flushes = [];
         hand.forEach( handCard => {
-			// based on order we can look for sets and straights
-			if( !sets[ handCard.card.order ] ){ sets[ handCard.card.order ] = [];}
-			sets[ handCard.card.order ].push( handCard );
+            // based on order we can look for sets and straights
+            if( !sets[ handCard.card.order ] ){ sets[ handCard.card.order ] = [];}
+            sets[ handCard.card.order ].push( handCard );
 
-			// the card's suit is to match for flushes and straight flushes
-			if( !flushes[ handCard.suit.name ] ){ flushes[ handCard.suit.name ] = []; }
-			flushes [handCard.suit.name ].push( handCard );
-		});
+            // the card's suit is to match for flushes and straight flushes
+            if( !flushes[ handCard.suit.name ] ){ flushes[ handCard.suit.name ] = []; }
+            flushes [handCard.suit.name ].push( handCard );
+        });
         return { hand : hand, sets: sets, flushes: flushes };
     }
 
@@ -28,7 +28,7 @@ class ScoringService{
         }else{
             ele.addClass( style );
         }
-   }
+    }
 
     converToThreeCharStirng( numbr ){
         return  String( numbr ).padStart( 3, "0" );

@@ -1,5 +1,5 @@
 var BaseModel = require( './BaseModel' );
-var jsonCLient = new( require( "../clients/JsonData"))()
+var jsonCLient = new( require( "../clients/JsonData"))();
 
 class Suits extends BaseModel{
 }

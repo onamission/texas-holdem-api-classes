@@ -39,7 +39,7 @@ class DealToPlayers extends DealService{
                     },
                     back: {
                     }
-                }
+                };
                 if( roundConfig.cardDirection == "up" ){
                     theDeal.back.css = {transform: "rotateY(180deg)"};
                 }else{

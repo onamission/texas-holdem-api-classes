@@ -8,7 +8,7 @@ class GameBoard{
                     "<div class='card front'>" +
                     "</div><div class='card back'></div></div>";
             }
-            communityContent += "</div>"
+            communityContent += "</div>";
         }
         return communityContent;
     }
@@ -25,7 +25,7 @@ class GameBoard{
             // reverse the order by starting at the bottom
             item = scoringKeys.pop();
             retVal += "<tr><td>"+
-                handScoring[ item ].label + "</td></tr>"
+                handScoring[ item ].label + "</td></tr>";
         }
         return retVal + "</table></body></html>";
     }
@@ -69,6 +69,6 @@ class GameBoard{
             playerBoardContents += player;
         });
         return "<div class='player-board'>" + playerBoardContents + "</div>" ;
-    };
+    }
 }
 module.exports = GameBoard;

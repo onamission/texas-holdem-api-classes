@@ -1,4 +1,4 @@
-var jsonCLient = new( require( "../clients/JsonData"))()
+var jsonCLient = new( require( "../clients/JsonData"))();
 
 class Decks{
 
@@ -33,8 +33,8 @@ class Decks{
                         "cardValue": "<span style='color:" + suits[ suit ].color +
                             "' title=\"" + cards[ card ].name + " of " + suits[ suit ].name + "\"><b>" +
                             cards[ card ].value + " " + suits[ suit ].symbol + "</b></span>" } );
-                })
-            })
+                });
+            });
         }
         this.cardsInDeck = deck;
         return this;

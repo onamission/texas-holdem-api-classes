@@ -10,7 +10,6 @@ describe("Game Setup Route Tests", function(){
         it("should return a configuration object for a texas holdem game with 5 players", function( done ){
             agent.get( config.appUrl + '/game_play/tex/', function( err, res ){
                 if( err ){
-                    console.log( err );
                     done( err );
                 }
                 var responseJson = JSON.parse( res.text );
@@ -23,12 +22,11 @@ describe("Game Setup Route Tests", function(){
                 assert.equal( responseJson.gameConfig.playerCards,2);
                 assert.equal( Object.keys( responseJson.gameConfig.rounds).length, 4 );
                 done();
-            })
+            });
         });
         it("should return a configuration object for a texas holdem game with 3 players", function( done ){
             agent.get( config.appUrl + '/game_play/tex/3', function( err, res ){
                 if( err ){
-                    console.log( err );
                     done( err );
                 }
                 var responseJson = JSON.parse( res.text );
@@ -41,12 +39,11 @@ describe("Game Setup Route Tests", function(){
                 assert.equal( responseJson.gameConfig.playerCards,2);
                 assert.equal( Object.keys( responseJson.gameConfig.rounds).length, 4 );
                 done();
-            })
+            });
         });
         it("should return a configuration object for a texas holdem game with 3 players and 2 decks", function( done ){
             agent.get( config.appUrl + '/game_play/tex/3/2', function( err, res ){
                 if( err ){
-                    console.log( err );
                     done( err );
                 }
                 var responseJson = JSON.parse( res.text );
@@ -59,12 +56,11 @@ describe("Game Setup Route Tests", function(){
                 assert.equal( responseJson.gameConfig.playerCards,2);
                 assert.equal( Object.keys( responseJson.gameConfig.rounds).length, 4 );
                 done();
-            })
+            });
         });
         it("should return a configuration object for a 5 card draw game with 5 players", function( done ){
             agent.get( config.appUrl + '/game_play/5draw/', function( err, res ){
                 if( err ){
-                    console.log( err );
                     done( err );
                 }
                 var responseJson = JSON.parse( res.text );
@@ -77,7 +73,7 @@ describe("Game Setup Route Tests", function(){
                 assert.equal( responseJson.gameConfig.playerCards,5);
                 assert.equal( Object.keys( responseJson.gameConfig.rounds).length, 2 );
                 done();
-            })
+            });
         });
     });
     describe("continue a started game game", function(){

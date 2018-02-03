@@ -9,13 +9,12 @@ describe("Game Setup Route Tests", function(){
         it("should return cards from the cards.json file which is an object of key/object pairss", function( done ){
             agent.get( config.appUrl + '/game_setup/5card/5', function( err, res ){
                 if( err ){
-                    console.log( err );
                     done( err );
                 }
                 assert.equal( res.status, 200 );
                 assert.equal( ( res.text.length > 3400 ) , true );
                 done();
-            })
+            });
         });
     });
 });

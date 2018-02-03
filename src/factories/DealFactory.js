@@ -5,7 +5,7 @@ class DealServiceFactory{
             "community": "DealToCommunity",
             "players": "DealToPlayers",
             "replace": "DealToReplace"
-        }
+        };
         try{
             var Class = require( "../services/dealServices/" + classes[ type ] ) || false;
         }catch( error ){

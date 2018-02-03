@@ -19,9 +19,9 @@ class BaseModel{
         var retVal =
             field && key ?
                 jsonCLient.getDataFromFile( this.className )[ key ][ field ]:
-            key?
-                jsonCLient.getDataFromFile( this.className )[ key ]:
-                jsonCLient.getDataFromFile( this.className );
+                key?
+                    jsonCLient.getDataFromFile( this.className )[ key ]:
+                    jsonCLient.getDataFromFile( this.className );
         return retVal;
     }
 
@@ -38,7 +38,7 @@ class BaseModel{
         if( !keyField ){
             return new Error( 'No Key Field Provided' );
         }
-        var allCards = jsonCLient.getDataFromFile( this.className )
+        var allCards = jsonCLient.getDataFromFile( this.className );
         var retVal = keyValue ? "" : {};
         Object.values( allCards ).forEach( item => {
             if(  !item[ keyField ] ){
@@ -60,7 +60,7 @@ class BaseModel{
                     retVal = item[ field ];
                 }
             }
-        })
+        });
         return retVal;
     }
 
@@ -97,7 +97,7 @@ class BaseModel{
         var sortedObject = {};
         sortedKeys.forEach( key => {
             sortedObject[ key ] = keyedObject[ key ];
-        })
+        });
         return sortedObject;
     }
 }

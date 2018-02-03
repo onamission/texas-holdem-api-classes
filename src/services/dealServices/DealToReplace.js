@@ -46,7 +46,7 @@ class DealToReplace extends DealService{
                         theDeal.back.css = {transform: "rotateY(180deg)"};
                     }else{
                         theDeal.front.css = {transform: "rotateY(180deg)"};
-                    };
+                    }
                     cardsForRound.push( theDeal );
                 });
             }
